@@ -1,0 +1,15 @@
+1) simple self attention :
+
+    simplest implementation of attention just for the understanding
+
+2) self_attention_wts :
+    adding head weights as required for the head and calculating attention
+
+3) causal attention :
+    masking future tokens and using dropout to improve generalization
+
+4) multi_head_attention:
+
+    this has 2 things :
+    a) multihead wrapper -> extends causal attention to multiple heads (simplest implementation of multi head attention)
+    b) multi head attention -> combination of both causal attention and the wrapper class. more intuitive.
