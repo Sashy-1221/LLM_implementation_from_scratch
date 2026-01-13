@@ -1,0 +1,15 @@
+* uses tokenization to split
+* used [EOS] token to split different sources or contexts
+
+** Byte Pair Encoding (BPE) is a subword tokenization algorithm that
+iteratively merges the most frequent adjacent character pairs from a training corpus to build an efficient vocabulary. Unlike your character-based regex tokenizer, BPE handles unknown words gracefully by breaking them into learned subword units,
+making it perfect for your RAG systems and LLM fine-tuning projects.**
+
+How BPE Works (Step-by-Step)
+1. Start with characters: lowest → l o w e s t </w> (add end-of-word marker)
+2. Count adjacent pairs: l o(1), o w(1), w e(1), etc.
+3. Merge most frequent: l o → lo (new token)
+4. Repeat: Scan corpus again, merge next frequent pair (e.g., lo w → low)
+5. Stop: At desired vocab size (e.g., 50k tokens for GPT)
+
+
