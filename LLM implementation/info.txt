@@ -1,0 +1,15 @@
+1) temp for dummy gpt :
+       - has the placeholder classes that are implemented in the final implementation
+2) temp for layer norm:
+       - tested to implement layer wise normalization no class or anything just test
+3) test for skip connection:
+        - implemented a simple neural network to see the use of skip connections
+4) layer_norm :
+        - implemented the layer norm function to use for the final implementation
+4) GELU_and_Feed_forward:
+        - implemented a feed forward network to use in the final LLM implementation
+5) transformer :
+        - aggregation of GELU_FEED_FORWARD with layer_norm upon MULTI_HEAD_ATTENTION
+6) LLM_implementation:
+        - created a gpt model with multiple transformer blocks and pre and post layer normalization
+        - and also tested the output of pretrained GPT
