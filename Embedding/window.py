@@ -48,15 +48,15 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
     return dataloader
 
-
-with open("the-verdict.txt") as f:
-    text = f.read()
-
-dataloader = create_dataloader_v1(text, batch_size=1, max_length=4, stride=1, shuffle=False)
-
-data_iter = iter(dataloader)    # creating an interator for the testing
-
-first_iter= next(data_iter)
-
-print(first_iter)
+#
+# with open("the-verdict.txt") as f:
+#     text = f.read()
+#
+# dataloader = create_dataloader_v1(text, batch_size=1, max_length=4, stride=1, shuffle=False)
+#
+# data_iter = iter(dataloader)    # creating an interator for the testing
+#
+# first_iter= next(data_iter)
+#
+# print(first_iter)
 
