@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from layer_norm import LayerNorm
-from GELU_and_Feed_forward import FeedForward
+from LLM_implementation.layer_norm import LayerNorm
+from LLM_implementation.GELU_and_Feed_forward import FeedForward
 from Attention.multi_head_attention import MultiHeadAttention
 
 class TransformerBlock(nn.Module):

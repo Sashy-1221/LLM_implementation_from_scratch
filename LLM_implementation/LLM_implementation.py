@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch
-from transformer import TransformerBlock
-from layer_norm import LayerNorm
+from LLM_implementation.transformer import TransformerBlock
+from LLM_implementation.layer_norm import LayerNorm
 import tiktoken
 
 
